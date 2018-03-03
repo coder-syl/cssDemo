@@ -1,0 +1,52 @@
+body {
+    background-image: url("../imag/bg.jpg");
+    background-size: 100%;
+}
+.searchnav{
+;
+    width: 1000px;
+    height: 150px;
+    padding: 50px 0px 0px 250px;
+    margin:50px 100px 0px 300px;
+}
+
+
+.list{
+    width: 1000px;
+    height: 400px;
+    margin:0px 100px 100px 300px;
+}
+
+.listnav{
+    /*background-color: beige;*/
+    width: 30%;
+    height: 175px;
+    float: left;
+    margin:10px 0px 10px 20px;
+}
+.listnav span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    font-family: "微软雅黑";
+}
+.listnav li{
+    list-style: none;
+    width: 30%;
+    height: 40px;
+    float: left;
+    background: rgba(0,0,0,.35);
+    text-align: center;
+    margin:5px 0px 10px 5px;
+}
+.link-3{
+    /*display: block;*/
+    /*float: left;*/
+
+    color: #FFF;
+    font-size: 14px;
+    line-height: 35px;
+    /*line-height: 35px;*/
+    /*border-radius: 2px;*/
+    /*transition: all 0.2s;*/
+}
