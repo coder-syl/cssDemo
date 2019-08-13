@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>研究透明度与隐藏的区别</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    .heart {
+        animation: beat 1s infinite;
+        -webkit-animation: beat 1s infinite;
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+		filter:drop-shadow(0px 0px 20px rgb(255,20,20));
+ 		/*box-shadow: 0px 0px 20px rgb(255, 20, 20);*/
+        position: relative;
+        top: 200px;
+        left: 200px;
+        transform: rotate(45deg);
+    }
+
+    .heart::before,
+    .heart::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: #f00;
+
+    }
+
+    .heart:before {
+        left: -100px;
+    }
+
+    .heart::after {
+        left: 0px;
+        top: -100px;
+    }
+
+    @keyframes beat {
+        0% {
+            transform: rotate(45deg) scale(0.8, 0.8);
+            opacity: 1;
+        }
+
+        25% {
+            transform: rotate(45deg) scale(1, 1);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: rotate(45deg) scale(0.8, 0.8);
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="heart">
+    </div>
+</body>
+
+</html>
